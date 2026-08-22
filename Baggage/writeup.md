@@ -11,7 +11,7 @@ This Sherlock provides players with an opportunity to analyze Shellbag artifacts
 After downloading and extracting the attachment, I obtained some artifact copy logs and a folder named `C`, which contains registry hives from the affected machine.
 
 Since this sherlock focuses on Shellbags, I used **ShellBags Explorer** to parse the user hive at `C\Users\steve\AppData\Local\Microsoft\Windows\UsrClass.dat` and began the analysis.
-![image](shellbags_explorer.png)
+![image](image/shellbags_explorer.png)
 
 <br>
 
@@ -43,7 +43,7 @@ The attacker navigated the filesystem and found sensitive files used by the vict
 
 #### Answer:
 Inspecting the folder `OT Station 3 internal VPN` reveals the Last Write / Access timestamp recorded by Shellbags.
-![image](VPN_folder.png)
+![image](image/VPN_folder.png)
 
 Answer: **2025-09-03 07:31:05**
 
@@ -99,7 +99,7 @@ When was the archive file from the network share accessed?
 
 #### Answer:
 Inspecting the `Dam Construction Engineer Plans.zip` directory entry provides the exact access timestamp.
-![image](shared_folder.png)
+![image](image/shared_folder.png)
 
 Answer: **2025-09-03 07:34:04**
 
@@ -122,6 +122,6 @@ The attacker compressed the staging folder to prepare the data for exfiltration.
 
 #### Answer:
 Checking the timestamps for the `a.zip` archive folder entry reveals the access time.
-![image](a_zip.png)
+![image](image/a_zip.png)
 
 Answer: **2025-09-03 07:34:30**
