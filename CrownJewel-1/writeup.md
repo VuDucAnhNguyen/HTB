@@ -1,4 +1,4 @@
-# CrownJewel-1Smoke & Mirrors
+# CrownJewel-1
 #### Categories: DFIR <br> Difficulty: Very Easy
 
 ## Sherlock Scenario
