@@ -8,7 +8,7 @@ Our SIEM alerted us to a suspicious logon event which needs to be looked at imme
 - `Reaper.zip`
 
 ## Solve
-After downloading and extracting the attachment, I obtained the files: `SECURITY.evtx` and `ntlmrelay.pcapng`. I used `EvtxECmd` to parse the event log to `.csv` and `Wireshark` to analyze the network artifacts.
+After downloading and extracting the attachment, I obtained the files: `SECURITY.evtx` and `ntlmrelay.pcapng`. I used `EvtxECmd` to parse the event log to `.csv` and `Wireshark` to analyze the artifacts.
 
 >[!Note] 
 > NTLM is a suite of security protocols used to authenticate clients and servers on Windows networks.
