@@ -25,7 +25,7 @@ unit42.zip: A ZIP file with SHA1 hash: 1D8AC45395551187EAF23793CE525056C4136D6E.
 - `unit42.zip`
 
 ## Solve
-After downloading and extracting the attachment, I obtained the file: `Microsoft-Windows-Sysmon-Operational.evtx`. I used `EvtxECmd` to parse the event log to `.csv` to analyze the network artifacts.
+After downloading and extracting the attachment, I obtained the file: `Microsoft-Windows-Sysmon-Operational.evtx`. I used `EvtxECmd` to parse the event log to `.csv` to analyze the artifacts.
 
 <br>
 
