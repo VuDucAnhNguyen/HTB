@@ -11,9 +11,6 @@ Log file: Desktop/ChallengeFile/port_scan.pcap
 
 Note: pcap file found public resources.
 
-## Attachments
-- `campfire-1.zip`
-
 ## Solve
 After connecting to the Sherlock machine, I retrieved `port_scan.pcap`, which captures the port scan activity.
 
