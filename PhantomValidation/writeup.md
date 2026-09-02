@@ -9,9 +9,6 @@ You are assigned to analyze the available artifacts and determine the nature and
 From pwnbox use the command 
 xfreerdp /v:<.ipaddress> /u:letsdefend /p:'' /cert:ignore /dynamic-resolution 
 
-## Attachments
-- `campfire-1.zip`
-
 ## Solve
 After connecting to the Sherlock machine, I received `Phantom_Validation.zip`, which contains server-side Caddy access logs and a disk dump file from the victim's Windows workstation.
 
